@@ -1,3 +1,5 @@
+import 'package:figma_proj/utils/helpers/go.dart';
+import 'package:figma_proj/utils/helpers/pager.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../utils/constants/app_sized_box.dart';
@@ -18,7 +20,7 @@ class LoginRegisterText extends StatelessWidget {
             text: AppTexts.dontHaveAAC, style: theme.textTheme.labelSmall),
         AppSizedBox.w2,
         GestureDetector(
-          onTap: () => {},
+          onTap: () => Go.replace(context, Pager.register),
           child: GlobalText(
               text: AppTexts.register, style: theme.textTheme.displayLarge),
         ),
